@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>react app without node</title>
+        
+        <!-- React Library -->
+        <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" integrity="sha512-8Q6Y9XnTbOE+JNvjBQwJ2H8S+UV4uA6hiRykhdtIyDYZ2TprdNmWOUaKdGzOhyr4dCyk287OejbPvwl7lrfqrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.min.js" integrity="sha512-6i4FxVh0YbXCtxtqrFlG0H6FJRO4YQ5fyFH0JBdAAiqCt6/Q+jHMabMSC8FpESVSJZvnQ52dB2A8OD9SMk7buw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- React DOM -->
+        <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" integrity="sha512-MOCpqoRoisCTwJ8vQQiciZv0qcpROCidek3GTFS6KTk2+y7munJIlKCVkFCYY+p3ErYFXCjmFjnfTTRSC1OHWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js" integrity="sha512-I5GJQRKGdj2miDs8ComgARfiAQiZJo/43YasH22qtweoG+YRXLTDYegxC/vPgw/ERxRzww/F4l4+8UiMmI20sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- React Router v5 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/5.3.4/react-router.min.js" integrity="sha512-IMSFXQ3rliFVbM+Quqs5y1bP7HPm8CyWuzDwlVfcqg1eYlEyexQ1NFi5GR0VudWW/kNBRl8AJwjYJFpwVN32/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- React Router Dom v5 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.3.4/react-router-dom.min.js" integrity="sha512-XJ25BbjmZQpaGkOJaDFXVJqfsBebv2aDLsBF3qT6zoC/gVj7XLuefNRzcgmlc5admYuODaYDrap8jzVyOsYFrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Babel Standalone -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.9/babel.min.js" integrity="sha512-DbLQpxPqGlybyPm4AXtV/+FsSw0J5JEHVqJmgNIrjyvxrvFJRhUgG/lKcviUwFQNKSdje3ngo4i0Ga+HAbtreA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!-- React components -->
+        <script type="text/babel" src="./app.js"></script>
+        <script type="text/babel" src="./components/home.js"></script>
+        <script type="text/babel" src="./components/about.js"></script>
+        <script type="text/babel">
+            // React code will go here
+            const root_element = document.getElementById('root')
+            const root = ReactDOM.createRoot(root_element);
+            root.render(<App />)
+        </script>
+    </body>
+</html>
